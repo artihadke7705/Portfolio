@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Arti’s Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link rel="stylesheet" href="./style.css" />
+
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#home" onclick="showSection('home')">Home</a></li>
+      <li><a href="#about" onclick="showSection('about')">About</a></li>
+      <li><a href="#skills" onclick="showSection('skills')">Skills</a></li>
+      <li><a href="#projects" onclick="showSection('projects')">Projects</a></li>
+    </ul>
+  </nav>
+  
+  <main>
+    <!-- Update your home section with this HTML -->
+<section id="home" class="active">
+  <div class="home-content">
+    <h3 class="intro-text">Hi, I am Arti Hadke</h3>
+    <p class="intro-para">
+      I'm a <b>Data Scientist</b> at Jio Platforms Limited with over a 2 years of experience in Generative AI and Machine Learning. 
+      I build AI-driven solutions and am passionate about optimizing AI workflows, and exploring the latest advancements in the field of Data Science. 
+      My expertise includes Python, Gen-AI, Machine Learning, SQL databases, and more, with a strong focus on RAG.
+    </p>
+    
+    <div class="contact-icons">
+      <a href="mailto:artihadke7705@gmail.com" class="icon-link" title="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/artihadke/" class="icon-link" title="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="tel:+8080362736" class="icon-link" title="Phone">
+        <i class="fas fa-phone"></i>
+      </a>
+      <a href="https://github.com/artihadke7705" class="icon-link" title="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+  </div>
+</section>
+    
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I am Arti Hadke, Associate Data Scientist with a strong foundation in machine learning, deep learning, and large language models. With a Bachelor's degree in Computer Engineering and minors in Data Science, my career has been centered around developing innovative AI solutions and optimizing data workflows.
+      
+      <br>
+      
+        I have worked on enhancing LLM-based applications, focusing on improving data retrieval efficiency and response accuracy. My expertise in large language models has allowed me to develop solutions that streamline complex tasks, such as report summarization, and improve decision-making processes across various domains.I have also developed RAG-based chatbots, fine-tuned YOLO for chart, graphs, tables and text detection,Deployed Fine-tuned models on Azure ML Studio and optimized data processing workflows handling terabytes of data weekly.
+        
+        <br>
+         I also enjoy exploring creative outlets like poetry, foosball, and football, which fuel my curiosity and problem-solving mindset.
+        
+        Let’s connect and explore the endless possibilities of AI and technology.
+        
+        </p>
+
+        <!-- Add this inside your "about" section, after the existing paragraph -->
+<div class="journey-container">
+  <h3>My Journey</h3>
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-header" onclick="toggleTimeline('job-experience')">
+        <h4>Associate Data Scientist</h4>
+        <span class="timeline-date">December 2023 - Present</span>
+        <span class="toggle-icon">+</span>
+      </div>
+      <div id="job-experience" class="timeline-content">
+        <p><strong>Jio Platforms Limited</strong></p>
+        <ul>
+          <li><strong>Retrieval Augmented Generation (RAG) Systems Optimization:</strong> Enhanced data retrieval efficiency by 30% and improved response accuracy for real-time applications.</li>
+    <li><strong>RAG Monitoring System:</strong> Ensured peak performance, cost-effectiveness, and reliability in real-time applications.</li>
+    <li><strong>RAG-Based Recommendation System:</strong> Increased response efficiency by 40% and improved relevance for better user experiences.</li>
+    <li><strong>LLM-Powered Report Summarization:</strong> Reduced report processing time from 3 hours to 6 minutes, improving analyst decision-making.</li>
+    <li><strong>Unsupervised Fine-Tuning of Large Models:</strong> Optimized a 1.5-million-parameter model using custom dataset.</li>
+    <li><strong>Social Media Sentiment Summarizer:</strong> Delivered sentiment-based insights on competitors and company platforms for strategic decision-making.</li>
+    
+        </ul>
+      </div>
+    </div>
+    
+    <div class="timeline-item">
+      <div class="timeline-header" onclick="toggleTimeline('internship')">
+        <h4>Data Science Intern</h4>
+        <span class="timeline-date">December 2021 - March 2022</span>
+        <span class="toggle-icon">+</span>
+      </div>
+      <div id="internship" class="timeline-content">
+        <p><strong>Devtown</strong></p>
+        <ul>
+          <li>Developed and evaluated a wide range of machine learning and deep learning models—including Linear Regression, Logistic Regression, SVM, Random Forest, KNN, Decision Tree, Apriori, CNN, ANN, RNN, and LSTM—based on business data. Assessed model performance and iteratively optimized parameters to improve accuracy and effectiveness.</li>
+<li>Conducted data wrangling and visualization to uncover patterns, generate actionable insights, and gain in-depth understanding of key features critical to business growth.</li>
+
+        </ul>
+      </div>
+    </div>
+    
+    <div class="timeline-item">
+      <div class="timeline-header" onclick="toggleTimeline('education')">
+        <h4>Bachelor of Engineering in Computer Science</h4>
+        <span class="timeline-date">August 2019 - July 2023</span>
+        <span class="toggle-icon">+</span>
+      </div>
+      <div id="education" class="timeline-content">
+        <p><strong>Savitribai Phule Pune University</strong></p>
+        <ul>
+          <li>Minor in Data Science</li>
+          <li>CGPA: 9.48</li>
+          <li>Relevant coursework: Machine Learning, Data Structures, Database Systems</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </section>
+    
+    <!-- Updated Skills Section -->
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills-container">
+    <!-- First row -->
+    <div class="skills-row">
+      <!-- Programming Card -->
+      <div class="skill-card">
+        <div class="skill-icon">
+          <i class="fas fa-code"></i>
+        </div>
+        <h3>Programming</h3>
+        <p>Python</p>
+      </div>
+      
+      <!-- Machine Learning Card -->
+      <div class="skill-card">
+        <div class="skill-icon">
+          <i class="fas fa-brain"></i>
+        </div>
+        <h3>Machine Learning</h3>
+        <p>Scikit-learn, RAGs, LangChain, LangGraph, TensorFlow, Azure ML Studio, PyTorch, Numpy</p>
+      </div>
+      
+      <!-- Databases Card -->
+      <div class="skill-card">
+        <div class="skill-icon">
+          <i class="fas fa-database"></i>
+        </div>
+        <h3>Databases</h3>
+        <p>SQL, Hive, Milvus, Druid, MongoDB</p>
+      </div>
+    </div>
+    
+    <!-- Second row -->
+    <div class="skills-row">
+      <!-- Data Visualization Card -->
+      <div class="skill-card">
+        <div class="skill-icon">
+          <i class="fas fa-chart-bar"></i>
+        </div>
+        <h3>Data Visualization</h3>
+        <p>Matplotlib, Seaborn, Pandas, Power BI, Tableau</p>
+      </div>
+      
+      <!-- Deployment Card -->
+      <div class="skill-card">
+        <div class="skill-icon">
+          <i class="fas fa-cube"></i>
+        </div>
+        <h3>Deployment</h3>
+        <p>Docker</p>
+      </div>
+    </div>
+  </div>
+</section>
+    
+    <!-- Updated Projects Section -->
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects-container">
+    <!-- Project Cards -->
+    <div class="project-card">
+      <h3>Multimodal RAG using Custom Components</h3>
+      <p>Developed a Multimodal RAG system integrating LangChain, Hugging Face’s LLaMA 3.1, and Alibaba’s GTE-Large for efficient text retrieval. Enhanced image understanding with Google Gemini and optimized knowledge retrieval using custom embeddings and in-memory storage.</p>
+      
+    </div>
+    
+    <div class="project-card">
+      <h3>AI Trip Planner using LangGraph </h3>
+      <p>Developed an intelligent trip planning agent that generates personalized travel itineraries based on user input(destination and number of travel days).
+        Automatically identifies top-rated tourist attraction, integrates real-time weather forecasting, recommends accommodation options, provides detailed cost estimation and suggest day-wise plans.</p>
+     
+    </div>
+    
+    <div class="project-card">
+      <h3>BERT FINETUNE for PII Detection</h3>
+      <p>Fine-tuned the BERT model to develop a high-performance custom PII detection system, achieving 97% accuracy across diverse datasets, significantly enhancing data privacy measures and ensuringrobust protection against sensitive information leakage.</p>
+      
+    </div>
+    <div class="project-card">
+      <h3>ANNA Virtual Voice Assistant using Python</h3>
+      <p>Built a virtual voice assistant using Python libraries such as SpeechRecognition and Text-to-Speech (TTS), capable of executing voice commands to perform tasks like playing songs on YouTube, sending WhatsApp messages, telling the current time, delivering jokes, and fetching information via Wikipedia searches.</p>
+      
+    </div>
+  </div>
+</section>
+  </main>
+
+  <!-- Integrated Chat Widget -->
+  <button class="chat-toggle" title="Chat">
+    <i class="fas fa-comment-dots fa-lg"></i>
+    </svg>
+  </button>
+  
+  <div class="chat-container">
+    <div class="chat-header">
+      <span>Let's Chat</span>
+      <div class="header-buttons">
+        <button class="clear-chat">Clear</button>
+        <button class="close-chat">&times;</button>
+      </div>
+    </div>
+    <div class="chat-messages"></div>
+    <div class="chat-input">
+      <input type="text" placeholder="Type your message..." />
+      <button>Send</button>
+    </div>
+  </div>
+
+  <script>
+    // Updated section toggle function
+function showSection(sectionId) {
+  // First hide all sections
+  document.querySelectorAll('section').forEach(section => {
+    section.classList.remove('active');
+    section.style.display = 'none'; // Explicitly hide all sections
+  });
+  
+  // Then show only the requested section
+  const activeSection = document.getElementById(sectionId);
+  activeSection.classList.add('active');
+  if (sectionId === 'home') {
+    activeSection.style.display = 'flex'; // Explicitly show the active section
+    
+} else {
+    activeSection.style.display = 'block'; // Explicitly show the active section
+}
+}
+
+// Make sure this runs when the page loads to set up initial state
+document.addEventListener('DOMContentLoaded', function() {
+  // Hide all sections except the home section on page load
+  document.querySelectorAll('section:not(#home)').forEach(section => {
+    section.style.display = 'none';
+  });
+});
+    
+    // Chat Widget Functionality
+    const API_KEY = "AIzaSyDDCNOtJe6OU_8Ezrf40JR9OVlaSJUsKl4"; // Replace with your Gemini API key
+    const GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=" + API_KEY;
+
+    const chatToggle = document.querySelector('.chat-toggle');
+    const chatContainer = document.querySelector('.chat-container');
+    const closeChat = document.querySelector('.close-chat');
+    const clearChat = document.querySelector('.clear-chat');
+
+    3
+    const chatInput = document.querySelector('.chat-input input');
+    const chatSend = document.querySelector('.chat-input button');
+    const chatMessages = document.querySelector('.chat-messages');
+
+    // Show chat container when toggle is clicked
+    chatToggle.addEventListener('click', () => {
+        chatContainer.style.display = 'flex';
+        chatToggle.style.display = 'none';
+     
+        if (chatMessages.children.length === 0) {
+        addMessage('bot', "Hi there! I'm Arti's AI assistant. How can I help you with information about Arti's skills, experience, or projects?");
+    }
+    });
+
+    // Close chat container when close button is clicked
+    closeChat.addEventListener('click', () => {
+        chatContainer.style.display = 'none';
+        chatToggle.style.display = 'flex';
+    });
+
+    // Clear chat messages when clear button is clicked
+    clearChat.addEventListener('click', () => {
+        chatMessages.innerHTML = '';
+    });
+
+    // Send message on button click or Enter key press
+    chatSend.addEventListener('click', sendMessage);
+    chatInput.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') sendMessage();
+    });
+
+    async function sendMessage() {
+        const message = chatInput.value.trim();
+        if (!message) return;
+
+        addMessage('user', message);
+        chatInput.value = '';
+        
+        const SYSTEM_PROMPT = `<system_prompt>
+YOU ARE A PERSONAL AI REPRESENTATIVE FOR **Arti Hadke**, AN ASSOCIATE DATA SCIENTIST CURRENTLY WORKING AT Jio Platforms Limited. YOUR PURPOSE IS TO PROVIDE INFORMATION STRICTLY RELATED TO Arti Hadke'S PROFESSIONAL BACKGROUND, SKILLS, EDUCATION, AND PROJECTS. ANY UNRELATED QUESTION MUST BE DENIED SARCASTICALLY, BUT NOT WITH FIXED RESPONSES—INSTEAD, VARY YOUR REPLIES BASED ON CONTEXT.
+DO NOT LIE OR MENTION ANY OTHER ACHIVEMNETS THAN THE ONE GIVEN BELOW.
+### GREETINGS PROTOCOL
+- ALWAYS respond to greetings in a friendly and engaging manner.
+
+### Arti Hadke - PROFESSIONAL SUMMARY
+Arti Hadke is an **Associate Data Scientist at Jio Platforms Limited.**, specializing in AI Solutions, data science, and automation. He has successfully developed multiple projects including RAG systems with efficiency,reliability and report summarization tool.
+
+### CONTACT INFORMATION
+- **Phone:** +91 8080362736
+- **Email:** artihadke7705@gmail.com
+- **LinkedIn:** [Arti Hadke](https://www.linkedin.com/in/artihadke/)
+
+### EXPERIENCE & PROJECTS
+- **Data Science Intern at Devtown**: Built a ecommerce B2B and B2C solution using salesforce
+- **PII Identification Suite**: Achieved 100% test case validation.
+- **RAG-based Chatbots**: Built custom RAG based chatbots for two different domain knowledge bases.
+- **Social Media Summarizer**: Provided sentiment insights for strategy.
+- **Employee Salary Prediction**: Built a model which predicts Employee salaries with 95% accuracy.
+- **Multimodal RAG using Custom Components**: Developed a Multimodal RAG system integrating LangChain, Hugging Face’s LLaMA 3.1, and Alibaba’s GTE-Large for efficient text retrieval. Enhanced image understanding with Google Gemini and optimized knowledge retrieval using custom embeddings and in-memory storage.
+= **AI Trip Planner using LangGraph**: Developed an intelligent trip planning agent that generates personalized travel itineraries based on user input(destination and number of travel days). Automatically identifies top-rated tourist attraction, integrates real-time weather forecasting, recommends accommodation options, provides detailed cost estimation and suggest day-wise plans.
+- **BERT FINETUNE for PII Detection**: Fine-tuned the BERT model to develop a high-performance custom PII detection system, achieving 97% accuracy across diverse datasets, significantly enhancing data privacy measures and ensuring robust protection against sensitive information leakage.
+- **ANNA Virtual Voice Assistant using Python**: Built a virtual voice assistant using Python libraries such as SpeechRecognition and Text-to-Speech (TTS), capable of executing voice commands to perform tasks like playing songs on YouTube, sending WhatsApp messages, telling the current time, delivering jokes, and fetching information via Wikipedia searches.
+
+### EDUCATION
+- **Bachelor of Engineering in Computer Science** | Savitribai Phule Pune University | **CGPA: 9.48 (2019-2023)**
+
+### TECHNICAL SKILLS
+- **Programming:** Python  
+- **Databases:** SQL, Hive, Milvus, Druid, MongoDB
+- **Data Science:** Scikit-learn, RAGs, LangChain, TensorFlow, Azure ML Studio,Pandas, Numpy, Langgraph
+- **Data Visualizataion:** Matplotlib, Seaborn
+- **Big Data & Cloud:** Hive,Airflow  
+- **Web Frameworks:** FastAPI, Flask
+
+### STRICT RULES FOR RESPONDING:
+1. **Always respond to greetings naturally and appropriately.**
+2. **ONLY** answer questions related to Arti Hadke’s professional details, projects, skills, or education.
+3. **If asked an unrelated question, craft a unique sarcastic denial based on context, rather than repeating fixed phrases.** Examples:
+   - If someone asks about politics: _"Arti’s too busy training models to train politicians."_
+   - If asked about cooking: _"Arti can whip up a neural network, but a good curry? That’s another story."_
+4. **KEEP RESPONSES MINIMAL**—no unnecessary elaboration.
+</system_prompt>
+`;
+        
+      const requestBody = {
+        contents: [{ parts: [{ text: `${SYSTEM_PROMPT}\n\nUser Query: ${message}` }] }]
+      };
+      
+      try {
+          const response = await fetch(GEMINI_URL, {
+              method: "POST",
+              headers: {
+                  "Content-Type": "application/json",
+                  "Referer": "https://abdulmuizshaikh.github.io/portfolio/"
+              },
+              body: JSON.stringify(requestBody)
+          });
+          
+          const data = await response.json();
+          console.log("Gemini Response:", data);
+          
+          if (data && data.candidates && data.candidates.length > 0) {
+              addMessage('bot', data.candidates[0].content.parts[0].text);
+          } else {
+              addMessage('bot', "No valid response received.");
+          }
+      } catch (error) {
+          console.error("Error fetching response:", error);
+          addMessage('bot', "Error fetching response. Please try again.");
+      }
+    }
+
+    function addMessage(type, content) {
+        const messageDiv = document.createElement('div');
+        messageDiv.classList.add('message', type);
+        messageDiv.textContent = content;
+        chatMessages.appendChild(messageDiv);
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+    }
+
+    // Add this to your existing JavaScript
+function toggleTimeline(id) {
+  const content = document.getElementById(id);
+  const header = content.previousElementSibling;
+  const icon = header.querySelector('.toggle-icon');
+  
+  content.classList.toggle('active');
+  
+  if (content.classList.contains('active')) {
+    icon.textContent = '−';
+  } else {
+    icon.textContent = '+';
+  }
+}
+  </script>
+</body>
+</html>
